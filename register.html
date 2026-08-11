@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se - Crazy People - a rede social das suas loucuras</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <div class="grid-vertical">
+        <div class="container-content">
+            <h1 class="title">Cadastre-se na rede social <br> que é só loucura!</h1>
+            <form action="" id="form-register" onsubmit="return false" method="post" class="form-centered">
+                <div class="form-group">
+                    <label for="">Nome</label>
+                    <input type="text" name="name" id="name" placeholder="Nome completo">
+                </div>
+
+                 <div class="form-group">
+                    <label for="">E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="email@email.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="">Senha</label>
+                    <div class="input-password">
+                        <input type="password" name="password" id="password">
+                        <i class="bi bi-eye icon-eye"></i>
+                        <!-- <i class="bi bi-eye-slash"></i> -->
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="">Confirme a senha</label>
+                    <div class="input-password">
+                        <input type="password" name="password-confirm" id="password-confirm">
+                        <i class="bi bi-eye icon-eye"></i>
+                        <!-- <i class="bi bi-eye-slash"></i> -->
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="group-buttons">
+            <a class="button button-primary">Cadastrar</a>
+            <a class="button button-cancel" href="index.html">Cancelar</a>
+            
+        </div>
+    </div>
+</body>
+</html>

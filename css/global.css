@@ -1,12 +1,15 @@
+html{
+    font-size: 18px;
+}
+
 body{
     margin: 0px;
     padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .title{
-    flex: 1;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 24px;
+    font-size: 1.4rem;
     text-align: center;
     font-weight: normal;
     margin-top: 12%;
@@ -25,7 +28,6 @@ body{
     display: flex;
     flex-direction: column;
     height: 80vh;
-    justify-content: center;
 }
 
 .group-buttons{
@@ -35,14 +37,19 @@ body{
     height: 20vh;
 }
 
-.button{
+a.button{
+    display: flex;
     flex: 1;
-    padding: 12px 20px;
     border-radius: 24px;
     font-size: 16px;
     cursor: pointer;
     width: 95%;
-    max-width: 48px;
+    max-width: 480px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1rem;
 }
 
 .button-primary{
@@ -58,9 +65,96 @@ body{
     margin-top: 6px;
 }
 
+.button-cancel{
+    background-color: #c00;
+    color: #fff;
+    border: 1px solid #c00;
+    margin-top: 6px;
+}
+
 .image-full-width{
     flex: 1;
     width: 90%;
     align-self: center;
     margin-bottom: 40px;
+}
+
+.image-centered{
+    flex: 1;
+    align-self: center;
+    margin: auto;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8px;
+}
+
+.form-group label{
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+}
+
+.form-group input{
+    width: 100%;
+    border: 1px solid #61646b;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.form-group .input-password{
+    position: relative;
+    flex: 1;
+    width: 100%;
+}
+
+.form-group .input-password .icon-eye{
+    position: absolute;
+    right: 0px;
+    top: 13px;
+    color: #afb1b6;
+    cursor: pointer;
+}
+
+.form-group input::placeholder{
+    color: #afb1b6;
+    opacity: 1;
+}
+
+.form-group::-ms-input-placeholder{
+    color: #afb1b6;
+}
+
+.form-centered{
+    margin: auto;
+    width: 100%;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+a.general:link, a.general:visited{
+    color: #2563eb;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+a.general:hover{
+    color: #00c;
+    font-weight: 600;
+}
+
+.button-post{
+    background-color: #0284c7;
+    color: #fff;
+    border-radius: 4px;
+    padding: 4px 16px;
+    border-width: 0px;
+    height: 28px;
 }
